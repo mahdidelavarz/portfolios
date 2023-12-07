@@ -1,0 +1,121 @@
+
+@font-face {
+  font-family: 'Parastoo';
+  src: url('fonts/boys-font/parastoo-font-v1.0.0-alpha5/web/Parastoo-Bold.eot');
+  src: url('fonts/boys-font/parastoo-font-v1.0.0-alpha5/web/Parastoo-Bold.eot') format('embedded-opentype'),
+       url('Parastoo-Bold.woff') format('woff'),
+       url('fonts/boys-font/parastoo-font-v1.0.0-alpha5/web/Parastoo-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: 'Sahel';
+  src: url('boys-font/sahel-font-v1.0.0-alpha14/Sahel-Black.eot');
+  src: url('boys-font/sahel-font-v1.0.0-alpha14/Sahel-Black.eot') format('embedded-opentype'),
+       url('boys-font/sahel-font-v1.0.0-alpha14/Sahel-Black.woff') format('woff'),
+       url('boys-font/sahel-font-v1.0.0-alpha14/Sahel-Black.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Samin';
+  src: url('boys-font/samim-font-v2.0.1/Samim-Bold.eot');
+  src: url('boys-font/samim-font-v2.0.1/Samim.eot') format('embedded-opentype'),
+       url('boys-font/samim-font-v2.0.1/Samim-Bold.woff') format('woff'),
+       url('boys-font/samim-font-v2.0.1/Samim-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('boys-font/shabnam-font-v2.4.0/Shabnam-Bold.eot');
+  src: url('boys-font/shabnam-font-v2.4.0/Shabnam-Light.eot') format('embedded-opentype'),
+       url('boys-font/shabnam-font-v2.4.0/Shabnam-Light.woff') format('woff'),
+       url('boys-font/shabnam-font-v2.4.0/Shabnam-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Tanha';
+  src: url('boys-font/tanha-font-v0.9/Tanha.eot');
+  src: url('boys-font/tanha-font-v0.9/Tanha.eot') format('embedded-opentype'),
+       url('boys-font/tanha-font-v0.9/Tanha.woff') format('woff'),
+       url('boys-font/tanha-font-v0.9/Tanha.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('boys-font/vazir-font-v18.0.0/Vazir-Light.eot');
+  src: url('boys-font/vazir-font-v18.0.0/Vazir-Bold.eot') format('embedded-opentype'),
+       url('boys-font/vazir-font-v18.0.0/Vazir-Light.woff') format('woff'),
+       url('boys-font/vazir-font-v18.0.0/Vazir-Light.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('boys-font/yekan-font/yekan-regular.eot');
+  src: url('boys-font/yekan-font/Yekan.eot') format('embedded-opentype'),
+       url('boys-font/yekan-font/yekan-regular.woff') format('woff'),
+       url('boys-font/yekan-font/yekan-regular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mitra';
+  src: url('384.Font.Farsi/BMitra.ttf');
+  src: url('384.Font.Farsi/BMitra.ttf') format('embedded-opentype'),
+       url('384.Font.Farsi/BMitra.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'IranNastalig';
+  src: url('IranNastaliq/IranNastaliq.woff');
+  src: url('IranNastaliq/IranNastaliq.eot') format('embedded-opentype'),
+       url('IranNastaliq/IranNastaliq.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'LatoBlack';
+  src: url('lato/Lato-Black.ttf');
+  src: url('lato/Lato-Black.ttf') format('embedded-opentype'),
+       url('lato/Lato-Black.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url('lato/Lato-Bold.ttf');
+  src: url('lato/Lato-Bold.ttf') format('embedded-opentype'),
+       url('lato/Lato-Bold.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'LatoLight';
+  src: url('lato/Lato-Light.ttf');
+  src: url('lato/Lato-Light.ttf') format('embedded-opentype'),
+       url('lato/Lato-Light.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'LatoRegular';
+  src: url('lato/Lato-Regular.ttf');
+  src: url('lato/Lato-Regular.ttf') format('embedded-opentype'),
+       url('lato/Lato-Regular.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Art';
+  src: url('English/ArtBrewery.ttf');
+  src: url('English/ArtBrewery.ttf') format('embedded-opentype'),
+       url('English/ArtBrewery.ttf') format('ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Wedding';
+  src: url('English/WeddingVintage.otf');
+  src: url('English/WeddingVintage.otf') format('embedded-opentype'),
+       url('English/WeddingVintage.otf') format('otf');
+  font-weight: bold;
+}

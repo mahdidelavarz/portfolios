@@ -1,0 +1,92 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ARotate {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.move {
+  animation-name: rotate;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes stable {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(-360deg);
+  }
+}
+.stop {
+  animation-name: stable;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+ display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  display: none;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  display: none;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+ display: none;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  display: none;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  height: 30vh!important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: rgb(27, 7, 36);
+  transition: all;
+  transition-duration: 5ms;
+  font-size: 1.15em;
+}
+/* Styling of overlay */
+.bm-overlay {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 100px;
+  background: rgba(187, 173, 173, 0.3);
+}
