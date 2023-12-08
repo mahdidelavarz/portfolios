@@ -22,7 +22,6 @@ export const PortfoliosData = [
       "https://s21.uupload.ir/files/osaris/digi-desk-5.png",
       "https://s21.uupload.ir/files/osaris/digi-desk-6.png",
       "https://s21.uupload.ir/files/osaris/digi-desk-7.png",
-      "https://s21.uupload.ir/files/osaris/digi-desk-8.png",
     ],
     phoneSlides: [
       "https://s21.uupload.ir/files/osaris/digi-phone-1.png",
@@ -34,6 +33,38 @@ export const PortfoliosData = [
       "https://s21.uupload.ir/files/osaris/digi-phone-7.png",
       "https://s21.uupload.ir/files/osaris/digi-phone-8.png",
     ],
+    description: {
+      minDesc: [
+        "I have developed an online digital store website with various features.",
+        "The website includes a product page , individual product page , the ability to add items to the shopping cart , the option to add items to the wishlist , filtering options based on technical specifications for each product category , light mode and dark mode , search functionality between products , and it is fully responsive for mobile , tablet and laptop devices.",
+      ],
+      usedTools: [
+        "To create this project , I utilized :",
+        " HTML5 , CSS3 , Tailwind , React , SwiperJs , ReactContext , Reducer , Axios , NextUi and FormikReact.",
+      ],
+      OptionsFullDetail: [
+        "I have designed and developed a e-commerce website for a digital store .",
+        " The website effers a wide range of digital products and features a user friendly interface.",
+        " The main components of the website include a product page where customers can brows through different categories of digital products. ",
+        " Each product has its own dedicated page with detailed information and images.",
+        " Customers can easily add products to their shopping cart and proceed to checkout .",
+        " Additionally , they have the options to save their favorite items in a wishlist for future reference . ",
+        "The website also provides advanced filtering options , allowing customers to narrow down their searched base on specific technical specification. ",
+        "The design of the website is modern and visually appealing. it offers both light mode and dark mode themes to cater to different users preferences .",
+        " The website is fully responsive and optimized for three different screen sizes: mobile , tablet and desktop. ",
+      ],
+      toolsFullDetail: [
+        "In terms of development tools , I used HTML and CSS for the basic structure and styling of the website.",
+        " React was used for building interactive components and managing state.",
+        " TailwindCSS was employed for efficient and responsive styling .",
+        " SwiperJs was utilized for creating a smooth and intuitive image carousel .",
+        " Context and Reducer were used for managing global state across different components .",
+        " Axios was used for making API requests to retrieve product data .",
+        " NextUi provided a set of pre-designed components for faster development . ",
+        " Finally , FormikReact was used for handling form submissions and validation.",
+        " Overall , this project showcases my proficiency in front-end development and my ability to create a functional and visually appealing e-commerce website.  ",
+      ],
+    },
   },
   {
     id: 2,

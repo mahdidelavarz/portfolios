@@ -1,14 +1,14 @@
-@keyframes spin {
+@keyframes moving {
   from {
-    transform: rotate(0deg);
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    transform: -translateY(20px);
   }
 }
-.ARotate {
-  animation-name: spin;
-  animation-duration: 4000ms;
+.moving {
+  animation-name: moving;
+  animation-duration: 2000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }

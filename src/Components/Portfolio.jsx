@@ -21,7 +21,7 @@ const Portfolios = () => {
                 <h1 className="px-4 py-2 mt-4 w-full text-slate-100 text-3xl">
                   {portfolio.title}
                 </h1>
-                <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg md:px-4 mt-4 flex-wrap">
+                <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg px-2 md:px-4 mt-4 flex-wrap">
                  {portfolio.tools.map((tool)=>{
                   return <span className="px-2 lg:px-4 py-1 rounded-t-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950 ">
                     {tool}
@@ -52,7 +52,7 @@ const Portfolios = () => {
                 <h1 className="px-4 py-2 mt-4 w-full text-slate-100 text-3xl">
                   {portfolio.title}
                 </h1>
-                <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg md:px-4 mt-4 flex-wrap">
+                <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg px-2 md:px-4 mt-4 flex-wrap">
                  {portfolio.tools.map((tool)=>{
                   return <span className="px-2 lg:px-4 py-1 rounded-t-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950">
                     {tool}

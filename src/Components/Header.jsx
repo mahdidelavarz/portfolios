@@ -75,11 +75,6 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <img
-        src="./planet-remix-fixed.png"
-        alt="planet"
-        className="ARotate mr-20 hidden md:flex justify-end"
-      />
       <div className="w-full h-full flex items-center justify-between px-10 md:hidden">
         <BurgerMenu />
         <img

@@ -16,23 +16,23 @@ const Expertise = () => {
         <b>I am fluent in :</b>
       </h1>
       <div className="w-full h-20 text-slate-200 flex justify-between text-5xl lg:text-7xl md:px-20 mt-10">
-        <TiHtml5 className="text-rose-500" />
-        <TiCss3 className="text-blue-500" />
-        <RiJavascriptFill className="text-yellow-500" />
-        <FaReact className="text-purple-500" />
+        <TiHtml5 className="text-rose-500 moving" />
+        <TiCss3 className="text-blue-500 moving" />
+        <RiJavascriptFill className="text-yellow-500 moving" />
+        <FaReact className="text-purple-500 moving" />
       </div>
       <div className="w-full h-20 text-slate-200 flex justify-between text-5xl lg:text-7xl md:px-20">
-        <BiLogoTypescript className="text-blue-500" />
-        <BiLogoTailwindCss className="text-teal-500" />
-        <SiMui className="text-cyan-500" />
-        <BiLogoRedux className="text-indigo-500" />
+        <BiLogoTypescript className="text-blue-500 moving" />
+        <BiLogoTailwindCss className="text-teal-500 moving" />
+        <SiMui className="text-cyan-500 moving" />
+        <BiLogoRedux className="text-indigo-500 moving" />
       </div>
       <div className="w-full h-20 text-slate-200 flex justify-between text-5xl lg:text-7xl xl:gap-28 ">
         <div className="w-1/2 flex justify-center ">
-          <BsGit className="text-red-500" />
+          <BsGit className="text-red-500 moving" />
         </div>
         <div className="w-1/2 flex justify-center">
-          <BsGithub />
+          <BsGithub className="moving"/>
         </div>
       </div>
     </div>

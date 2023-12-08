@@ -1,15 +1,17 @@
-import { IoCaretBackOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import SinglePortfolioSlider from "./SinglePorfolioSliders";
 import { SinglePortfolioPhoneSlider } from "./SinglePorfolioSliders";
 import { Link } from "react-router-dom";
+import { PortfoliosData } from "../data";
 const SinglePortfolio = () => {
   const { id } = useParams();
+  const itemsData = PortfoliosData.filter((i) => i.id == id);
+  console.log(itemsData[0]);
   return (
     <>
-      <div className="px-1 md:px-6 flex gap-10">
+      <div className="px-1 md:px-6 flex gap-16">
         {/* phone */}
         <div className="w-full h-[96vh] lg:w-[30vw] border-4 border-gray-800 rounded-xl md:rounded-3xl flex flex-col justify-between relative">
           <div className="w-full h-12 bg-gray-800 border-b-slate-900 border-b rounded-t-md md:rounded-t-2xl flex justify-center items-center">
@@ -31,7 +33,7 @@ const SinglePortfolio = () => {
           </div>
         </div>
         {/* desktop */}
-        <div className="w-[60vw]  h-fit hidden lg:flex flex-col rounded-3xl ">
+        <div className="w-[60vw]  h-fit hidden lg:flex flex-col rounded-3xl">
           <div className="w-full h-12 bg-gray-700 rounded-t-2xl flex justify-center items-center">
             <span className="w-3 h-3 rounded-full bg-white"></span>
           </div>
@@ -47,6 +49,31 @@ const SinglePortfolio = () => {
               <FaGithub />
               Get the source
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-auto p-10 ">
+        <div className="w-full h-full text-slate-300">
+          <h1 className="text-3xl">{itemsData[0].title}</h1>
+          <div className="mt-8">
+            {itemsData[0].description.minDesc.map((i) => (
+              <p className="text-2xl block  leading-9 ">{i}</p>
+            ))}
+          </div>
+          <div className="mt-8">
+            {itemsData[0].description.usedTools.map((i) => (
+              <p className="text-2xl block leading-9 ">{i}</p>
+            ))}
+          </div>
+          <div className="mt-8">
+          {itemsData[0].description.toolsFullDetail.map((i) => (
+              <p className="text-2xl block leading-9 ">{i}</p>
+            ))}
+          </div>
+          <div className="mt-8">
+          {itemsData[0].description.OptionsFullDetail.map((i) => (
+              <p className="text-2xl block leading-9 ">{i}</p>
+            ))}
           </div>
         </div>
       </div>
