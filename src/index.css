@@ -10,3 +10,6 @@
     box-sizing: border-box;
     font-family: 'LatoRegular';
 }
+body{
+    background-color: black;
+}

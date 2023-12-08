@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Particle />
-      <div className="w-full absolute top-5">
+      <div className="w-full absolute top-1 md:top-5">
         <Router>
           <Routes>
             <Route path="/" element={<MainPage />} />

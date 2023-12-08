@@ -9,15 +9,16 @@ const SinglePortfolio = () => {
   const { id } = useParams();
   return (
     <>
-      <div className="px-6 flex gap-10">
-        <div className="w-full h-[96vh] lg:w-[30vw] border-4 border-gray-800 rounded-3xl flex flex-col justify-between relative">
-          <div className="w-full h-12 bg-gray-800 border-b-slate-900 border-b rounded-t-2xl flex justify-center items-center">
+      <div className="px-1 md:px-6 flex gap-10">
+        {/* phone */}
+        <div className="w-full h-[96vh] lg:w-[30vw] border-4 border-gray-800 rounded-xl md:rounded-3xl flex flex-col justify-between relative">
+          <div className="w-full h-12 bg-gray-800 border-b-slate-900 border-b rounded-t-md md:rounded-t-2xl flex justify-center items-center">
             <span className="w-3 h-3 rounded-full bg-white"></span>
           </div>
           <div className="w-full h-[82.6vh]">
             <SinglePortfolioPhoneSlider itemId={id} />
           </div>
-          <div className="w-full h-12 bg-gray-700 rounded-b-2xl flex lg:justify-center justify-between items-center px-3">
+          <div className="w-full h-16 bg-gray-700 rounded-b-md md:rounded-b-2xl flex lg:justify-center justify-between items-center px-1 md:px-4">
             <Link className="flex text-xs gap-3 items-center px-3 py-2 bg-gray-800 text-slate-50 rounded-lg lg:hidden">
               <FaEye />
               See Online
@@ -29,6 +30,7 @@ const SinglePortfolio = () => {
             </Link>
           </div>
         </div>
+        {/* desktop */}
         <div className="w-[60vw]  h-fit hidden lg:flex flex-col rounded-3xl ">
           <div className="w-full h-12 bg-gray-700 rounded-t-2xl flex justify-center items-center">
             <span className="w-3 h-3 rounded-full bg-white"></span>
