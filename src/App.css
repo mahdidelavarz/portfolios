@@ -1,21 +1,56 @@
 @keyframes moving {
-  from {
-    transform: translateY(30px);
+  25% {
+    transform: translateY(40px);
   }
-  to {
-    transform: -translateY(20px);
+  75% {
+    transform: -translateY(40px);
   }
 }
 .moving {
   animation-name: moving;
-  animation-duration: 2000ms;
+  animation-duration: 8000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes rotate {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -31,10 +66,10 @@
 
 @keyframes stable {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform:rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 .stop {
@@ -45,7 +80,7 @@
 }
 /* Position and sizing of burger button */
 .bm-burger-button {
- display: none;
+  display: none;
 }
 
 /* Color/shape of burger icon bars */
@@ -60,7 +95,7 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
- display: none;
+  display: none;
 }
 
 /* Color/shape of close button cross */
@@ -72,11 +107,13 @@
   position: fixed;
   left: 0;
   top: 80px;
-  height: 30vh!important;
+  height: 30vh !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
+  width: 100%;
+  height: 35vh !important;
   background: rgb(27, 7, 36);
   transition: all;
   transition-duration: 5ms;
@@ -89,4 +126,7 @@
   left: 0;
   top: 100px;
   background: rgba(187, 173, 173, 0.3);
+}
+.purple {
+  color: rgb(205, 95, 248);
 }

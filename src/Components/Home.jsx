@@ -18,11 +18,14 @@ const Home = () => {
   return (
     <div className="w-full grid grid-cols-12 mt-24 justify-center items-center">
       <div className=" col-span-12 md:col-span-6  text-slate-100 pl-6 lg:pl-24">
-        <h1 className="text-slate-100 text-4xl">Hi There !</h1>
-        <h1 className="text-slate-100 text-4xl">
+        <div className="flex gap-3">
+        <h1 className="text-slate-100 text-4xl mb-6">Hi There !</h1>
+        <span className="wave text-4xl" role="img" aria-labelledby="wave">👋🏻</span>
+        </div>
+        <h1 className="text-slate-100 text-5xl">
           I'M <b className="text-purple-500 shadow-sm">Mahdi Delavar</b>{" "}
         </h1>
-        <div className="mt-6 text-xl md:text-2xl lg:text-3xl">
+        <div className="mt-10 text-2xl md:text-3xl lg:text-3xl">
           <Typewriter
             words={[
               "Web Developer",
