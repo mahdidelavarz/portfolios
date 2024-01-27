@@ -5,8 +5,10 @@ import { FaUserAstronaut, FaReacteurope } from "react-icons/fa";
 import { GiRelationshipBounds } from "react-icons/gi";
 import { fallDown as Menu } from "react-burger-menu";
 import { useState } from "react";
-import { Link, Element, Events } from "react-scroll";
+import { Link } from "react-scroll";
+import { useTranslate } from "../context/TranslationContext";
 const BurgerMenu = () => {
+  const {lng} = useTranslate();
   const [OpenMenu, setOpenMenu] = useState(false);
   const handleSetActive = (to) => {
     console.log(to);
@@ -29,7 +31,7 @@ const BurgerMenu = () => {
       )}
       <Menu isOpen={OpenMenu} width={"100vw"}>
         <ul className=" w-full h-full px-6 ">
-          <li className="flex gap-2  text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-2">
+          <li className="flex gap-2  text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-2 px-2">
             <Link
               className="flex gap-x-3"
               activeClass="active"
@@ -42,10 +44,10 @@ const BurgerMenu = () => {
               onClick={handleClose}
             >
               <BiHomeSmile className="text-2xl" />
-              <span>Home</span>
+              <span>{lng ? 'Home' : 'خانه'}</span>
             </Link>
           </li>
-          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4">
+          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4 px-2">
             <Link
               className="flex gap-x-3"
               activeClass="active"
@@ -58,10 +60,10 @@ const BurgerMenu = () => {
               onClick={handleClose}
             >
               <FaUserAstronaut className="text-xl" />
-              <span>About Me</span>
+              <span>{lng ? 'About me' : 'درباره من'}</span>
             </Link>
           </li>
-          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4">
+          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4 px-2">
             <Link
               className="flex gap-x-3"
               activeClass="active"
@@ -74,10 +76,10 @@ const BurgerMenu = () => {
               onClick={handleClose}
             >
               <FaReacteurope className="text-2xl" />
-              <span>Projects</span>
+              <span>{lng ? 'Projects' : 'پروژه ها'}</span>
             </Link>
           </li>
-          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4">
+          <li className="flex gap-2 text-slate-100 cursor-pointer justify-start rounded-md  pl-4 py-2 bg-purple-950 mt-4 px-2">
             <Link
               className="flex gap-x-3"
               activeClass="active"
@@ -90,7 +92,7 @@ const BurgerMenu = () => {
               onClick={handleClose}
             >
               <GiRelationshipBounds className="text-2xl" />
-              <span>Contact Me</span>
+              <span>{lng ? 'Contact Me' : 'تماس با من'}</span>
             </Link>
           </li>
         </ul>

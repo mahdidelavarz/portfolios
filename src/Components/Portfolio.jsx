@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { PortfoliosData } from "../data";
+import { useTranslate } from "../context/TranslationContext";
 const Portfolios = () => {
+  const { lng } = useTranslate();
   const FirstPart = PortfoliosData.filter((p) => p.order === 1);
   const secondePart = PortfoliosData.filter((p) => p.order === 2);
   return (
     <div className="w-full mt-20 md:px-16 lg:px-20 ">
       <div className="w-full h-20 rounded-xl bg-gradient-to-b from-purple-950 bg-opacity-30 flex justify-center text-slate-100 text-3xl items-center">
-        <h1>Portfolios</h1>
+        <h1>{lng ? "Portfolios" : "نمونه کارها"}</h1>
       </div>
       <div className="w-full px-6 mt-6 gap-20 pb-8 flex flex-col lg:flex-row">
         {FirstPart.map((portfolio) => {
@@ -14,57 +16,67 @@ const Portfolios = () => {
             <div className=" w-full border border-[#005] bg-gradient-to-b from-[#002] bg-opacity-30 rounded-xl xl:h-[73vh] flex flex-col justify-between">
               <div>
                 <img
-                  src={portfolio.img}
-                  alt={portfolio.title}
+                  src={portfolio.mainImages.dImg}
+                  alt={portfolio.enTitle}
                   className="w-full"
                 />
                 <h1 className="px-4 py-2 mt-4 w-full text-slate-100 text-3xl">
-                  {portfolio.title}
+                  {portfolio.enTitle}
                 </h1>
                 <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg px-2 md:px-4 mt-4 flex-wrap">
-                 {portfolio.tools.map((tool)=>{
-                  return <span className="px-2 lg:px-4 py-1 rounded-t-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950 ">
-                    {tool}
-                  </span>
-                 })}
+                  {portfolio.tools.map((tool) => {
+                    return (
+                      <div key={tool.title} className="flex items-center shadow-sm shadow-stone-600 gap-2 px-2 lg:px-4 py-1 rounded-tl-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950">
+                        <div>{tool.icon}</div>
+                        <span className=" ">
+                          {tool.title}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <NavLink to={`/Portfolio/${portfolio.id}`}>
-          <button className="w-full flex h-12 justify-center items-center text-slate-100 bg-purple-950 rounded-xl mt-6 bg-opacity-70 hover:bg-opacity-100 duration-300">
-            See The Details{" "}
-          </button>
-          </NavLink>
+                <button className="w-full flex h-12 justify-center items-center text-slate-100 bg-purple-950 rounded-xl mt-6 bg-opacity-70 hover:bg-opacity-100 duration-300">
+                  {lng ? "See The Details" : "دیدن جزعیات"}
+                </button>
+              </NavLink>
             </div>
           );
         })}
       </div>
       {/* 2 */}
       <div className="w-full px-6 mt-6 gap-20 pb-8 flex flex-col lg:flex-row">
-      {secondePart.map((portfolio) => {
+        {secondePart.map((portfolio) => {
           return (
-            <div className=" w-full border border-[#005] bg-gradient-to-b from-[#002] bg-opacity-30 rounded-xl xl:h-[73vh] flex flex-col justify-between">
+            <div className=" w-full border mt-20 border-[#005] bg-gradient-to-b from-[#002] bg-opacity-30 rounded-xl xl:h-[73vh] flex flex-col justify-between">
               <div>
                 <img
-                  src={portfolio.img}
-                  alt={portfolio.title}
+                  src={portfolio.mainImages.dImg}
+                  alt={portfolio.enTitle}
                   className="w-full"
                 />
                 <h1 className="px-4 py-2 mt-4 w-full text-slate-100 text-3xl">
-                  {portfolio.title}
+                  {portfolio.enTitle}
                 </h1>
                 <div className="w-full flex justify-start gap-4 text-slate-100 text-xs md:text-sm lg:text-base xl:text-lg px-2 md:px-4 mt-4 flex-wrap">
-                 {portfolio.tools.map((tool)=>{
-                  return <span className="px-2 lg:px-4 py-1 rounded-t-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950">
-                    {tool}
-                  </span>
-                 })}
+                  {portfolio.tools.map((tool) => {
+                    return (
+                      <div key={tool.title} className="flex items-center shadow-sm shadow-stone-600 gap-2 px-2 lg:px-4 py-1 rounded-tl-xl rounded-br-xl bg-gradient-to-r from-fuchsia-950">
+                        <div>{tool.icon}</div>
+                        <span className=" ">
+                          {tool.title}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <NavLink to={`/Portfolio/${portfolio.id}`}>
-          <button className="w-full flex h-12 justify-center items-center text-slate-100 bg-purple-950 rounded-xl mt-6 bg-opacity-70 hover:bg-opacity-100 duration-300">
-            See The Details{" "}
-          </button>
-          </NavLink>
+                <button className="w-full flex h-12 justify-center items-center text-slate-100 bg-purple-950 rounded-xl mt-6 bg-opacity-70 hover:bg-opacity-100 duration-300">
+                  {lng ? "See The Details" : "دیدن جزعیات"}
+                </button>
+              </NavLink>
             </div>
           );
         })}

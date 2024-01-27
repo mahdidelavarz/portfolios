@@ -1,22 +1,17 @@
-import { GrHomeRounded } from "react-icons/gr";
-import { PiHamburgerFill } from "react-icons/pi";
-import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { MdGTranslate } from "react-icons/md";
-import { FaCaretDown } from "react-icons/fa";
 import { BiHomeSmile } from "react-icons/bi";
 import { FaUserAstronaut, FaReacteurope } from "react-icons/fa";
 import BurgerMenu from "./BurgerMenu";
 import { GiRelationshipBounds } from "react-icons/gi";
-// import { NavLink } from "react-router-dom";
-import { Link, Element, Events } from "react-scroll";
-import { useState } from "react";
+import { Link } from "react-scroll";
+import { useTranslate } from "../context/TranslationContext";
 const Header = () => {
-  const [lng, setLng] = useState(false);
   const handleSetActive = (to) => {
     console.log(to);
   };
+  const { lng, setLng } = useTranslate();
   return (
-    <div className="w-full h-20 bg-[#190229] fixed top-0 shadow-md shadow-[#2d183d] flex justify-between items-center z-50 pr-10">
+    <div className="w-full h-20 bg-[#190229] fixed top-0 shadow-md shadow-[#2d183d] flex justify-between items-center z-50 md:px-10" dir={lng ? 'ltr' : 'rtl'}>
       <ul className=" h-full items-center gap-10 px-10 hidden md:flex">
         <li className="flex gap-2 text-slate-100 cursor-pointer items-center">
           <Link
@@ -30,7 +25,7 @@ const Header = () => {
             onSetActive={handleSetActive}
           >
             <BiHomeSmile className="text-2xl" />
-            <span>Home</span>
+            <span>{lng ? 'Home' : 'خانه'}</span>
           </Link>
         </li>
         <li className="flex gap-2 text-slate-100 cursor-pointer items-center">
@@ -45,7 +40,7 @@ const Header = () => {
             onSetActive={handleSetActive}
           >
             <FaUserAstronaut className="text-xl" />
-            <span>About Me</span>
+            <span>{lng ? 'About me' : 'درباره من'}</span>
           </Link>
         </li>
         <li className="flex gap-2 text-slate-100 cursor-pointer items-center">
@@ -60,7 +55,7 @@ const Header = () => {
             onSetActive={handleSetActive}
           >
             <FaReacteurope className="text-2xl" />
-            <span>Projects</span>
+            <span>{lng ? 'Projects' : 'پروژه ها'}</span>
           </Link>
         </li>
         <li className="flex gap-2 text-slate-100 cursor-pointer items-center">
@@ -75,7 +70,7 @@ const Header = () => {
             onSetActive={handleSetActive}
           >
             <GiRelationshipBounds className="text-2xl" />
-            <span>Contact Me</span>
+            <span>{lng ? 'Contact Me' : 'تماس با من'}</span>
           </Link>
         </li>
       </ul>

@@ -6,6 +6,7 @@ const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   console.log(name);
   const serviceId = "service_i078ko2";
   const templateId = "template_x4kvkfe";
@@ -20,6 +21,7 @@ const EmailForm = () => {
   console.log(form.current);
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     emailjs
       .sendForm(
         "service_i078ko2",
@@ -29,10 +31,11 @@ const EmailForm = () => {
       )
       .then(
         (result) => {
-          console.log(result)
+          console.log(result);
           setName("");
           setEmail("");
           setMessage("");
+          setIsLoading(false);
         },
         (error) => {
           console.log(error.text);

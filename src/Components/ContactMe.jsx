@@ -2,12 +2,14 @@ import EmailForm from "./EmailForm";
 import { FaTelegram, FaTwitter, FaGithub } from "react-icons/fa";
 import { ImLinkedin, ImFacebook2 } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
+import { useTranslate } from "../context/TranslationContext";
 const ContactMe = () => {
+  const { lng } = useTranslate();
   return (
     <div>
       <div className=" md:px-20 lg:px-24 mt-16">
         <div className="w-full h-20 rounded-xl bg-gradient-to-b from-fuchsia-950 bg-opacity-30 flex justify-center text-slate-100 text-3xl items-center">
-          <h1>Contact Me</h1>
+          <h1>{lng ? 'Contact Me' : 'تماس با من'}</h1>
         </div>
       </div>
       <div className="w-auto h-auto lg:flex mt-10 pb-10">
