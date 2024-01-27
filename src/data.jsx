@@ -20,8 +20,8 @@ export const PortfoliosData = [
       { title: "React Reducer" },
     ],
     mainImages: {
-      pImg: "./digitize/phone/digi-ph-home.png",
-      dImg: "./digitize/digi-desk-home.png",
+      pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-home.png",
+      dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-home.png",
     },
     order: 1,
     description: [
@@ -29,8 +29,8 @@ export const PortfoliosData = [
         enTitle: "Home Page and Categories",
         frTitle: "صفحه اصلی و دسته بندی ها",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-home.png",
-        dImg: "./digitize/digi-desk-home-slider.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-home.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-home.png",
         enParas: [
           "In this section , the home page of the website , various categories and slider of products whit discount are designed ",
           "In each category , users can view related products",
@@ -44,8 +44,8 @@ export const PortfoliosData = [
         enTitle: "Individual Product Page",
         frTitle: "صفحه جزعیات محصول",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-phones.png",
-        dImg: "./digitize/digi-desk-singleSection-laptops.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-phones.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-singleSection-laptops.png",
         enParas: [
           "There is the individual page for each product ",
           "Users can view all the details of the selected product on this page",
@@ -61,8 +61,8 @@ export const PortfoliosData = [
         enTitle: "Shopping Cart",
         frTitle: "سبد خرید",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-cart.png",
-        dImg: "./digitize/digi-desk-cart.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-cart.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-cart.png",
         enParas: [
           "Users can add products to their shopping cart",
           "They can see the details of added products",
@@ -80,8 +80,8 @@ export const PortfoliosData = [
         enTitle: "Wishlist",
         frTitle: "علاقمندی ها",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-interests.png",
-        dImg: "./digitize/digi-desk-singleSection-laptops.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-interests.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-interests.png",
         enParas: [
           "Users can add their favorite products to their wishlist",
           "They can see the details of the added products and add them to the cart. ",
@@ -95,8 +95,8 @@ export const PortfoliosData = [
         enTitle: "Product Filters",
         frTitle: "فیلتر محصولات",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-filters.png",
-        dImg: "./digitize/digi-desk-phones.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-filters.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-phones.png",
         enParas: [
           "Users can filter products in each category based on their specification",
           "The filter options for different categories are depending on the product attributes within them!",
@@ -110,8 +110,8 @@ export const PortfoliosData = [
         enTitle: "Product Search",
         frTitle: "جستجوی محصول",
         icon: "",
-        pImg: "./digitize/phone/digi-ph-phones.png",
-        dImg: "./digitize/digi-desk-singleSection-laptops.png",
+        pImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-ph-phones.png",
+        dImg: "https://s27.uupload.ir/files/osaris/portfolio-digitize/digi-desk-waches.png",
         enParas: [
           "Users can search among all the products on the site based on the product name",
         ],
