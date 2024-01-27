@@ -12,7 +12,7 @@ const SinglePortfolio = () => {
     <>
       <div className="w-full h-auto">
         {/* header */}
-        <div className="w-full px-8 items-center h-20 bg-purple-950 lg:bg-red-500  fixed top-0 right-0 left-0 rounded-b-3xl flex justify-between ">
+        <div className="w-full px-8 items-center h-20 bg-purple-950  fixed top-0 right-0 left-0 rounded-b-3xl flex justify-between ">
           <h1 className="text-slate-200 text-2xl">{data.enTitle}</h1>
           <Link to={"/"}>
             <button className="text-2xl text-slate-200 py-2 px-6 rounded-xl border-2 border-purple-600 ">
